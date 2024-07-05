@@ -1,0 +1,140 @@
+		Categoria acao = new Categoria("Acao");
+		categoriaRepository.save(acao);
+
+		Categoria aventura = new Categoria("Aventura");
+		categoriaRepository.save(aventura);
+
+		Categoria comedia = new Categoria("Comedia");
+		categoriaRepository.save(comedia);
+
+		Filme filme = new Filme(
+				"afera.png",
+				"A Fera",
+				"Filme de ação na selva",
+				true,
+				10,
+				BigDecimal.valueOf(19.99),
+				LocalDate.of(2023, 4, 26),
+				acao);
+		filmeRepository.save(filme);
+
+		filme = new Filme(
+				"badboys.webp",
+				"Bad Boys",
+				"Filme de policiais falsos",
+				false,
+				50,
+				BigDecimal.valueOf(1.1),
+				LocalDate.of(2023, 5, 22),
+				comedia);
+		filmeRepository.save(filme);
+
+		filme = new Filme(
+				"blackpanther.jpg",
+				"A Pantera Negra",
+				"Sucessora do pantera negra agora tem filme",
+				true,
+				20,
+				BigDecimal.valueOf(4.7),
+				LocalDate.of(2023, 3, 24),
+				acao);
+		filmeRepository.save(filme);
+
+		filme = new Filme(
+				"cidadeperdida.jpg",
+				"Cidade Perdida",
+				"A cidade que foi achada mas ainda ta perdida kkkkk",
+				true,
+				120,
+				BigDecimal.valueOf(4.99),
+				LocalDate.of(2023, 3, 12),
+				aventura);
+		filmeRepository.save(filme);
+
+		filme = new Filme(
+				"divertidamente.webp",
+				"Divertidamente 2",
+				"Agora a criança é maluca e tem crise o tempo todo",
+				true,
+				30,
+				BigDecimal.valueOf(2.5),
+				LocalDate.of(2023, 5, 17),
+				comedia);
+		filmeRepository.save(filme);
+
+		filme = new Filme(
+				"doisirmaos.jpg",
+				"Dois irmãos",
+				"Um filme que conta a historia de dois irmaos",
+				true,
+				220,
+				BigDecimal.valueOf(4.99),
+				LocalDate.of(2023, 5, 14),
+				Acao);
+		filmeRepository.save(filme);
+
+		filme = new Filme(
+				"drestranho.jpg",
+				"Dr. Estranho 2",
+				"Dr. Estranho acabando com o universo por causa do homem aranha",
+				true,
+				35,
+				BigDecimal.valueOf(1.05),
+				LocalDate.of(2023, 2, 22),
+				acao);
+		filmeRepository.save(filme);
+
+		filme = new Filme(
+				"encanto.jpeg",
+				"Encanto",
+				"Garota que odeia a familia da disney",
+				true,
+				720,
+				BigDecimal.valueOf(1.85),
+				LocalDate.of(2023, 2, 23),
+				aventura);
+		filmeRepository.save(filme);
+
+		filme = new Filme(
+				"esquemaderisco.jpg",
+				"Esquema de risco",
+				"Invasao a banco e coisa e tal",
+				true,
+				60,
+				BigDecimal.valueOf(5.39),
+				LocalDate.of(2023, 3, 28),
+				acao);
+		filmeRepository.save(filme);
+
+		filme = new Filme(
+				"monica.jpeg",
+				"Monica",
+				"Filme da Monica",
+				true,
+				95,
+				BigDecimal.valueOf(0.56),
+				LocalDate.of(2023, 4, 30),
+				comedia);
+		filmeRepository.save(filme);
+
+		filme = new Filme(
+				"planeta.jpg",
+				"Planeta dos Macacos",
+				"u u u ua a a a",
+				true,
+				350,
+				BigDecimal.valueOf(1.01),
+				LocalDate.of(2023, 5, 29),
+				aventura);
+		filmeRepository.save(filme);
+
+		filme = new Filme(
+				"wish.jpeg",
+				"Wish",
+				"Aquele site de compra lá",
+				true,
+				240,
+				BigDecimal.valueOf(11.23),
+				LocalDate.of(2023, 5, 11),
+				acao);
+		filmeRepository.save(filme);
